@@ -19,6 +19,7 @@
 		816EB49B27F8B6D2009B7A9B /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 816EB49A27F8B6D2009B7A9B /* FirebaseDynamicLinks */; };
 		816EB49D27F8B6D2009B7A9B /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 816EB49C27F8B6D2009B7A9B /* FirebaseMessaging */; };
 		816EB4A027F8C1AD009B7A9B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 816EB49F27F8C1AD009B7A9B /* GoogleService-Info.plist */; };
+		81AB60CA27FB7B1A00D2FF06 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 81AB60C927FB7B1A00D2FF06 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 				816EB49227F88CA8009B7A9B /* AppAuth in Frameworks */,
 				816EB49927F8B6D2009B7A9B /* FirebaseAuth in Frameworks */,
 				816EB49D27F8B6D2009B7A9B /* FirebaseMessaging in Frameworks */,
+				81AB60CA27FB7B1A00D2FF06 /* Alamofire in Frameworks */,
 				816EB49427F88CA8009B7A9B /* AppAuthCore in Frameworks */,
 				816EB49B27F8B6D2009B7A9B /* FirebaseDynamicLinks in Frameworks */,
 			);
@@ -104,6 +106,7 @@
 				816EB49827F8B6D2009B7A9B /* FirebaseAuth */,
 				816EB49A27F8B6D2009B7A9B /* FirebaseDynamicLinks */,
 				816EB49C27F8B6D2009B7A9B /* FirebaseMessaging */,
+				81AB60C927FB7B1A00D2FF06 /* Alamofire */,
 			);
 			productName = Pro;
 			productReference = 816EB47927F88AB1009B7A9B /* Pro.app */;
@@ -136,6 +139,7 @@
 			packageReferences = (
 				816EB49027F88CA8009B7A9B /* XCRemoteSwiftPackageReference "AppAuth-iOS" */,
 				816EB49727F8B6D2009B7A9B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				81AB60C827FB7B1A00D2FF06 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 816EB47A27F88AB1009B7A9B /* Products */;
 			projectDirPath = "";
@@ -405,6 +409,14 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		81AB60C827FB7B1A00D2FF06 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -432,6 +444,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 816EB49727F8B6D2009B7A9B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseMessaging;
+		};
+		81AB60C927FB7B1A00D2FF06 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81AB60C827FB7B1A00D2FF06 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
